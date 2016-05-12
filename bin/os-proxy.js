@@ -7,10 +7,20 @@ const
     osProxy = require('os-proxy'),
     cli = meow(`
         Usage
-          $ os-proxy <set|get|enable|disable>
+          $ os-proxy <command> [host]
+
+        Command
+          set      Change the configured system proxy.
+          get      Show the currently set proxy.
+          enable   Turn on the currently set proxy.
+          disable  Turn off the currently set proxy.
+          toggle   Enable or disable the proxy to the opposite state.
+          clear    Disable and also delete the proxy.
 
         Example
-          $ os-proxy set localhost:1234
+          $ os-proxy set --hostname=localhost --port=1234
+          $ os-proxy get
+          localhost:1234
     `),
     action = cli.input[0];
 
@@ -19,7 +29,7 @@ if (!action) {
     process.exit(1);
 }
 
-if (!/^(?:set|get|enable|disable)/.test(action)) {
+if (!/^(?:set|get|enable|disable|toggle|clear)/.test(action)) {
     console.error('Invalid proxy action.');
     process.exit(1);
 }
