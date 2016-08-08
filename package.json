@@ -1,6 +1,6 @@
 {
   "name": "os-proxy-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Manage system-wide proxy settings.",
   "homepage": "https://github.com/sholladay/os-proxy-cli",
   "author": {
