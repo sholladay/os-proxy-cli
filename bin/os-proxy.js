@@ -2,27 +2,26 @@
 
 'use strict';
 
-const
-    meow = require('meow'),
-    osProxy = require('os-proxy'),
-    cli = meow(`
-        Usage
-          $ os-proxy <command> [host]
+const osProxy = require('os-proxy');
+const cli = require('meow')(`
+    Usage
+      $ os-proxy <command> [host]
 
-        Command
-          set      Change the configured system proxy.
-          get      Show the currently set proxy.
-          enable   Turn on the currently set proxy.
-          disable  Turn off the currently set proxy.
-          toggle   Enable or disable the proxy to the opposite state.
-          clear    Disable and also delete the proxy.
+    Command
+      set      Change the configured system proxy.
+      get      Show the currently set proxy.
+      enable   Turn on the currently set proxy.
+      disable  Turn off the currently set proxy.
+      toggle   Enable or disable the proxy to the opposite state.
+      clear    Disable and also delete the proxy.
 
-        Example
-          $ os-proxy set --hostname=localhost --port=1234
-          $ os-proxy get
-          localhost:1234
-    `),
-    action = cli.input[0];
+    Example
+      $ os-proxy set --hostname=localhost --port=1234
+      $ os-proxy get
+      localhost:1234
+`);
+
+const [action] = cli.input;
 
 if (!action) {
     console.error('Please provide a proxy action.');

@@ -1,4 +1,4 @@
-# os-proxy-cli
+# os-proxy-cli [![Build status for os-proxy-cli on Circle CI.](https://img.shields.io/circleci/project/sholladay/os-proxy-cli/master.svg "Circle Build Status")](https://circleci.com/gh/sholladay/os-proxy-cli "OS Proxy CLI Builds")
 
 > Manage system-wide proxy settings.
 
@@ -10,9 +10,9 @@
 
 ## Install
 
-````sh
+```sh
 npm install os-proxy-cli --global
-````
+```
 
 ## Usage
 
