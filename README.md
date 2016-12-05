@@ -36,8 +36,7 @@ localhost:8000
 Change the proxy configuration.
 
 ```
-$ os-proxy set localhost:1234
-localhost:8000
+$ os-proxy set --hostname=localhost --port=1234
 ```
 
 ## Contributing

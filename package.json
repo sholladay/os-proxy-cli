@@ -33,12 +33,12 @@
     "bin": "./bin"
   },
   "dependencies": {
-    "meow": "3.7.0",
-    "os-proxy": "0.6.0"
+    "meow": "^3.7.0",
+    "os-proxy": "^0.6.0"
   },
   "devDependencies": {
-    "eslint-config-tidy": "0.3.0",
-    "xo": "0.16.0"
+    "eslint-config-tidy": "^0.4.0",
+    "xo": "^0.17.0"
   },
   "keywords": [
     "cli-app",
