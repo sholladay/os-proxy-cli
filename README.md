@@ -39,6 +39,10 @@ Change the proxy configuration.
 $ os-proxy set --hostname=localhost --port=1234
 ```
 
+## API
+
+See [os-proxy](https://github.com/sholladay/os-proxy) to use this programmatically.
+
 ## Contributing
 
 See our [contributing guidelines](https://github.com/sholladay/os-proxy-cli/blob/master/CONTRIBUTING.md "The guidelines for participating in this project.") for more details.
